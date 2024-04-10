@@ -1,7 +1,9 @@
-from flask import Flask
+from flask import Flask, render_template
 
 app = Flask("Ola")
 
 @app.route('/')
 def ola():
-    return "Olá mundo"
+    return render_template("ola.html")
+
+
